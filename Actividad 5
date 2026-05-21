@@ -1,0 +1,19 @@
+from abc import ABC, abstractmethod
+
+class Empleado(ABC):
+
+    @abstractmethod
+    def calcular_sueldo(self):
+        pass
+
+
+class EmpleadoPorHora(Empleado):
+
+    def calcular_sueldo(self):
+        return "El sueldo del empleado por hora fue calculado."
+
+
+class EmpleadoFijo(Empleado):
+
+    def calcular_sueldo(self):
+        return "El sueldo del empleado fijo fue calculado."
