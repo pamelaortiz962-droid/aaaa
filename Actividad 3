@@ -1,0 +1,19 @@
+from abc import ABC, abstractmethod
+
+class Figura(ABC):
+
+    @abstractmethod
+    def calcular_area(self):
+        pass
+
+
+class Circulo(Figura):
+
+    def calcular_area(self):
+        return "El área del círculo fue calculada."
+
+
+class Rectangulo(Figura):
+
+    def calcular_area(self):
+        return "El área del rectángulo fue calculada."
